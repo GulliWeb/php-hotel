@@ -3,7 +3,7 @@
 ## Description
 The **php-hotel** project is a web application developed in PHP that manages a list of hotels. Users can view information about hotels and filter them based on parking availability and ratings. The application offers a user-friendly interface and utilizes Bootstrap for enhanced presentation.
 
-## Features
+## Features ✨
 - Display of a table with hotel information
 - Filtering hotels by:
   - Available parking 🚗
