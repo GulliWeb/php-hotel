@@ -50,36 +50,38 @@ $hotels = [
     <title>Php array</title>
 </head>
 <body>
-    <!-- Inserisco tabella BOOTSTRAP -->
-    <table class="table">
-  <thead> 
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">NOME HOTEL</th>
-      <th scope="col">PARCHEGGIO</th>
-      <th scope="col">VOTO</th>
-      <th scope="col">DISTANZA CENTRO</th>
-  </thead>
-  <tbody>
-    <tr>
-    <?php foreach( $hotels as $hotel ): ?> <!-- Ciclo dentro all'array bidimensionale di hotels estraendo ogni giro il relativo hotel in posizione corrispondente all'indice del mio ciclo forEach -->
-      <th scope="row">1</th>
-      <td><?= $hotel['name']; ?> <!-- Sintassi tag PHP & ECHO --></td>
-      <td>
-        <!-- Condizione if per verificare se c'è o meno il parcheggio e mostrare dinamicamente in tabella il risultato -->
-        <?php if ($hotel['parking']): ?> 
-        Parcheggio disponibile
-        <?php else: ?>
-        Parcheggio non disponibile
-        <?php endif ?>   
-     </td>
- 
-      <td><?= $hotel['vote']; ?></td>
-      <td><?= $hotel['distance_to_center'] ?>km</td>
-    </tr>
-    <?php endforeach ?> <!-- Uso end for each al posto delle {} per scrivere blocchi di codice php misti con html per preferenza di visibilità del mio codice. -->
-    </tr>
-  </tbody>
-</table>
+    <h1 class="text-white text-center fw-bold fs-1 pt-2 pb-5 m-0">HOTELS' TABLE</h1>
+    <div class="table-wrapper">
+        <!-- Inserisco tabella BOOTSTRAP -->
+        <table class="table table-dark">
+            <thead> 
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">NOME HOTEL</th>
+                <th scope="col">PARCHEGGIO</th>
+                <th scope="col">VOTO</th>
+                <th scope="col">DISTANZA CENTRO</th>
+            </thead>
+            <tbody>
+              <tr>
+              <?php foreach( $hotels as $hotel ): ?> <!-- Ciclo dentro all'array bidimensionale di hotels estraendo ogni giro il relativo hotel in posizione corrispondente all'indice del mio ciclo forEach -->
+                <th scope="row">1</th>
+                <td><?= $hotel['name']; ?> <!-- Sintassi tag PHP & ECHO --></td>
+                <td>
+                  <!-- Condizione if per verificare se c'è o meno il parcheggio e mostrare dinamicamente in tabella il risultato -->
+                  <?php if ($hotel['parking']): ?> 
+                  Parcheggio disponibile
+                  <?php else: ?>
+                  Parcheggio non disponibile
+                  <?php endif ?>   
+                </td>
+                <td><?= $hotel['vote']; ?></td>
+                <td><?= $hotel['distance_to_center'] ?>km</td>
+              </tr>
+              <?php endforeach ?> <!-- Uso end for each al posto delle {} per scrivere blocchi di codice php misti con html per preferenza di visibilità del mio codice. -->
+              </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
