@@ -1,4 +1,4 @@
-# php-hotel
+# php-hotel 🏨
 
 ## Description
 The **php-hotel** project is a web application developed in PHP that manages a list of hotels. Users can view information about hotels and filter them based on parking availability and ratings. The application offers a user-friendly interface and utilizes Bootstrap for enhanced presentation.
@@ -6,16 +6,16 @@ The **php-hotel** project is a web application developed in PHP that manages a l
 ## Features
 - Display of a table with hotel information
 - Filtering hotels by:
-  - Available parking
-  - Rating greater than 3
+  - Available parking 🚗
+  - Rating greater than 3 ⭐
 - Displays all hotels if no filters are specified
 
-## Requirements
+## Requirements ⚙️
 - PHP 7.4 or higher
 - Web server (e.g., Apache or Nginx)
 - Bootstrap for interface design
 
-## Installation
+## Installation 🚀
 1. Clone the repository:
    ```bash
    git clone https://github.com/your-username/php-hotel.git
@@ -30,7 +30,7 @@ The **php-hotel** project is a web application developed in PHP that manages a l
 
 5. Open your web browser and navigate to `http://localhost/path-to-your-project/index.php` to view the application.
 
-## Usage
+## Usage 📋
 
 To use the application, simply follow the steps below:
 
@@ -39,7 +39,7 @@ To use the application, simply follow the steps below:
 3. Use the form provided to filter hotels by parking availability or rating.
 4. The application will display results based on your selected criteria.
 
-## Contributing
+## Contributing 🤝
 
 We welcome contributions to enhance the project! If you'd like to contribute, please follow these steps:
 
@@ -47,4 +47,8 @@ We welcome contributions to enhance the project! If you'd like to contribute, pl
 2. Create a new branch for your feature or bug fix.
 3. Make your changes and commit them with clear messages.
 4. Push your changes to your forked repository.
-5. Open a pull request to the main repository for review.   
+5. Open a pull request to the main repository for review.
+
+## License 📄
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
